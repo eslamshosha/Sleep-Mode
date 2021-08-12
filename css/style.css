@@ -1589,10 +1589,6 @@ html[dir=rtl] .social-link:last-of-type{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 20px;
-    }
-    .features-div .col-md-3:last-of-type .features-box{
-        margin-bottom: 0;
     }
     .features-box .lnr{
         margin-bottom: 10px;
