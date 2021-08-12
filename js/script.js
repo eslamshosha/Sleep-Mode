@@ -40,6 +40,12 @@ $(document).ready(function() {
 		$(".overlay-box2").fadeOut(500);
 	});
 	
+    ////////////////add chevron-down class in mobile size////////////////////////////////
+
+	 if ( $(window).width() < 1199 ) {
+        $("header .add-chevron").addClass("chevron-down");
+        
+    }
 	
     // //brand Slider Carousel
     ////////////////add swiper carsoul to class brand////////////////////////////////

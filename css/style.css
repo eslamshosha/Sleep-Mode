@@ -244,7 +244,7 @@ html[dir=rtl] .search-input{
     transition: all .3s ease-in-out;
 }
 .search-input:focus{
-    border: 1px solid #01579b;
+    border: 2px solid #01579b;
 }
 .search-input::placeholder{
     font-size: 14px;
@@ -286,6 +286,7 @@ html[dir=rtl] .search-button .lnr-magnifier{
 }
 
 .header-icons .add-to{
+    cursor: pointer;
     border-radius: 10px;
     background-color: #fff;
     width: 44px;
@@ -331,6 +332,7 @@ html[dir=rt] .add-to{
 }
 .figure-main img{
     min-height: 340px;
+    width: 100%;
 }
 /*                            header                                */
 /*                            brand cat section                           */
@@ -352,57 +354,24 @@ html[dir=rt] .add-to{
     flex-wrap: wrap;
 }  
 .brand .brand-img {
-    /* display: flex;
-    border-radius: 26px;
-    background-color: #fff;
-    border: 1x solid #eeeeee;
-    overflow: hidden;
-    padding-bottom: 100%;
-    position: relative;
-    width: 100%;*/ 
     width: 165px;
     height: 165px;
+    overflow: hidden;
     transition: all 0.3s ease-in-out;      
-}
-/* .brand .brand-img  img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    object-fit: cover;
-    width: auto;
-    max-width: 100%;
-    height: auto; 
-    transform: translate(-50%,-50%);
-} */
-
-.brand-section .swiper-slide .brand>.brand-img{
-    background-color: #004883;
-}
-.brand-section .swiper-slide:nth-of-type(2) .brand .brand-img{
-    background-color: #c70015;
-}
-.brand-section .swiper-slide:nth-of-type(3) .brand .brand-img{
-    background-color: #f15c30;
-}
-.brand-section .swiper-slide:nth-of-type(4) .brand .brand-img{
-    background-color: #004883;
-}
-.brand-section .swiper-slide:nth-of-type(5) .brand .brand-img{
-    background-color: #173084;
-}
-.brand-section .swiper-slide:nth-of-type(6) .brand-img{
-    background-color: #ff7500;
 }
 
   
 .brand-slider .brand-img img { 
+    border-radius: 15px;
     max-height: 100%;
     overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-/* .brand-slider .brand-img img:hover{
-    
-} */
+.brand-slider .brand-img img:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
 .brand-slider .swiper-btn {
     position: absolute;
     z-index: 1;
@@ -509,10 +478,10 @@ html[dir=rt] .add-to{
     margin-bottom: 25px;
     margin-top: 0;
 }
-.product-section .heading-span{
+/* .product-section .heading-span{
     font-size: 32px;
     color: #01579b;
-}
+} */
 .product-slider {
     position: relative;
   }
@@ -529,7 +498,28 @@ html[dir=rt] .add-to{
     justify-content: center;
     overflow: hidden;
     width: 100%;
-    height: 261px;
+}
+
+/* .product .product-img{
+    overflow: hidden;
+    padding-top: 100%;
+    background: white;
+    position: relative;
+} */
+.product .product-img img {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+  
+.product .product-img:hover img {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
 }
 .product{
     border: 1px solid #e0e0e0;
@@ -551,17 +541,6 @@ html[dir=rt] .add-to{
     text-align: center;
     text-decoration: none;
 }
-
-.product .product-img img {
-    overflow: hidden;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-  
-.product .product-img:hover img {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-}
 .product .product-content{
     padding: 15px 15px 0;
     border-top: 1px solid #e0e0e0;
@@ -579,7 +558,7 @@ html[dir=rt] .add-to{
     color: #FFF;
     background-color: #01579b;
     border-radius: 12px;
-    width: 165px;
+    width: 100%;
     height: 49px;
     line-height: 49px;
     margin: 0 auto;
@@ -1217,7 +1196,7 @@ html[dir=rtl] .social-link:last-of-type{
     color: #000000;
 } 
 .nav-foot-li{
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 .nav-foot-link{
     color: #757575;
@@ -1292,7 +1271,11 @@ html[dir=rtl] .social-link:last-of-type{
     color: #757575;
 }
 
-.pay-footer img {/*responsive image*/
+.pay-footer .pay-img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.pay-footer .taswak-img {
     max-width: 100%;
     margin-inline-start: 8px;
 }
@@ -1350,8 +1333,8 @@ html[dir=rtl] .social-link:last-of-type{
         background-color: #01579b;
     }
     html[dir=rtl] .menu-bars{
-        margin-left: 26px;
-        margin-right: 0;
+        margin-left: 0;
+        margin-right: 15px;
     }
     .nav-head figure{
         width: 100px;
@@ -1575,12 +1558,7 @@ html[dir=rtl] .social-link:last-of-type{
     }
     /*                             banner section                          */
     /*                             big-image section                          */
-    .banner-slider .swiper-pagination{
-        bottom: 72px;
-    }
-    .big-image-section{
-        margin-bottom: 0;
-    }
+    
     /*                             big-image section                          */
     /*                             product section                          */
     .product-content .price-box{
@@ -1592,9 +1570,11 @@ html[dir=rtl] .social-link:last-of-type{
         justify-content: center;
         text-align: center;
         line-height: unset;
+        margin-bottom: 10px;
     }
     .product .product-name{
-        height: 50px;
+        margin-bottom: 8px;
+        /* height: 50px; */
         line-height: unset;
         white-space: pre-wrap;
         display: -webkit-box;
@@ -1603,14 +1583,16 @@ html[dir=rtl] .social-link:last-of-type{
     }
     /*                             product section                          */
     /*                             feature section                          */
-    .big-image{
-        margin-bottom: 62px;
-    }
+
     
     .features-box{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 20px;
+    }
+    .features-div .col-md-3:last-of-type .features-box{
+        margin-bottom: 0;
     }
     .features-box .lnr{
         margin-bottom: 10px;
@@ -1663,6 +1645,11 @@ html[dir=rtl] .social-link:last-of-type{
         margin-bottom: 0px;
     }
     /*                                  footer                                  */
+}
+@media (max-width: 480px){
+    .product .product-name{
+        height: 50px;
+    }
 }
 /*                                    media query                                    */
 
