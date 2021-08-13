@@ -1459,7 +1459,8 @@ html[dir=rtl] .social-link:last-of-type{
     }
     /*                              brand section                           */
     .brand-grid{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, auto); /*auto to respond to justify 1fr dont respond*/
+        justify-content: center;
     }
     /*                              brand section                           */
     /*open search*/
@@ -1567,7 +1568,7 @@ html[dir=rtl] .social-link:last-of-type{
 }
 @media (max-width: 767px){
     .brand-grid{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, auto);
         gap: 15px 15px;
     }
 }
