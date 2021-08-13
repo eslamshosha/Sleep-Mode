@@ -47,40 +47,40 @@ $(document).ready(function() {
         
     }
 	
-    // //brand Slider Carousel
-    ////////////////add swiper carsoul to class brand////////////////////////////////
+    // // //brand Slider Carousel
+    // ////////////////add swiper carsoul to class brand////////////////////////////////
 
-	 if ( $(window).width() < 1199 ) {
-        $(".brand-section .swiper-containersss").addClass("swiper-container");
-        $(".brand-section .swiper-wrappersss").addClass("swiper-wrapper");
-        $(".brand-section .swiper-slidesss").addClass("swiper-slide");
-        var blog = new Swiper('.brand-section .swiper-container', {
-            loop: true,
-            autoplay: true,
-            pagination: {
-                el: '.brand-section .swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                0: {
-                    slidesPerView: 3,
-                    spaceBetween: 15,
-                },
-                767: {
-                    slidesPerView: 3,
-                    spaceBetween: 15,
-                },
-                992: {
-                    slidesPerView: 3,
-                    spaceBetween: 15,
-                },
-                1199: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-            },
-        });
-    }
+	//  if ( $(window).width() < 1199 ) {
+    //     $(".brand-section .swiper-containersss").addClass("swiper-container");
+    //     $(".brand-section .swiper-wrappersss").addClass("swiper-wrapper");
+    //     $(".brand-section .swiper-slidesss").addClass("swiper-slide");
+    //     var blog = new Swiper('.brand-section .swiper-container', {
+    //         loop: true,
+    //         autoplay: true,
+    //         pagination: {
+    //             el: '.brand-section .swiper-pagination',
+    //             clickable: true,
+    //         },
+    //         breakpoints: {
+    //             0: {
+    //                 slidesPerView: 3,
+    //                 spaceBetween: 15,
+    //             },
+    //             767: {
+    //                 slidesPerView: 3,
+    //                 spaceBetween: 15,
+    //             },
+    //             992: {
+    //                 slidesPerView: 3,
+    //                 spaceBetween: 15,
+    //             },
+    //             1199: {
+    //                 slidesPerView: 2,
+    //                 spaceBetween: 30,
+    //             },
+    //         },
+    //     });
+    // }
 
     // //product Slider Carousel
     ///////// ** product** /////////
