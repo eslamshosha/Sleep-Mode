@@ -1505,10 +1505,15 @@ html[dir=rtl] .social-link:last-of-type{
     }
     /*open search*/
     /*          header info        */
+    header{
+        background-attachment: unset;
+        background-position: unset;
+        background-size: cover;
+    }
     .header-info{
         height: auto;
         min-height: 100vh;
-        padding-bottom: 25px;
+        padding-bottom: 45px;
         padding-top: 110px;
     }
     .header-info .header-cont{
