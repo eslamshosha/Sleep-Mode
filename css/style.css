@@ -1513,8 +1513,8 @@ html[dir=rtl] .social-link:last-of-type{
     .header-info{
         height: auto;
         min-height: 100vh;
-        padding-bottom: 45px;
-        padding-top: 110px;
+        padding-bottom: 25px;
+        padding-top: 80px;
     }
     .header-info .header-cont{
         flex-direction: column;
