@@ -1421,9 +1421,9 @@ html[dir=rtl] .social-link:last-of-type{
     .header-info a{
         line-height: 30px;
     }
-    html[dir=ltr] .header-info a{
+    /* html[dir=ltr] .header-info a{
         font-size: 11px;
-    }
+    } */
     .big-menu .lang-section{
         display: block;
         color: #00355f;
