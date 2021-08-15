@@ -106,7 +106,7 @@ body {
     line-height: 38px; /*also height of div */
     cursor: pointer;
     font-size: 14px;
-    color: #616161;
+    color: #fff;
     font-family: "TajawalRegular";
     transition: all 0.3s ease-in-out;
 }
@@ -130,6 +130,11 @@ html[dir=rtl] .lang-section .chevron-down::after{
 /*top header*/
 header {
     position: relative;
+    /* height: 100vh; */
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 30px;
 }
 .top-header a{
@@ -141,12 +146,13 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 9999;
 }
-@media (min-width: 1199px){
+/* @media (min-width: 1199px){
     .top-header{
         z-index: 2;
     }
-}
+} */
 /* .show-icons{
     display: none;
 } */
@@ -158,7 +164,7 @@ header {
     transition: all 0.3s ease-in-out;
 }
 .nav-header li .cat-anchor{
-    color: #616161;
+    color: #fff;
     font-size: 17px;
     font-family: "TajawalMedium";
     line-height: 44px;
@@ -188,7 +194,6 @@ html[dir=rtl] .nav-header li:last-of-type{
     font-size: 8px;
     margin-left: 4px;
     font-weight: bold;
-    transition: all .3s ease-in-out;
 }
 html[dir=rtl] .nav-header .chevron-down::after{
     margin-left: 0;
@@ -334,6 +339,47 @@ html[dir=rt] .add-to{
     min-height: 260px;
     width: 100%;
 }
+.header-info{
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    padding-bottom: 55px;
+}
+.header-info .header-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (min-width:1200px) and (max-width:1500px){      
+    .header-info .figure-captions{
+        width: 410px;
+    }
+}
+.header-info .caption-head{
+    font-family: "TajawalBold";
+    font-size: 84px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 35px;
+}
+.header-info .caption-button{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    width: 165px;
+    height: 49px;
+    color: #fff;
+    font-family: "TajawalBold";
+    font-size: 19px;
+    background-color: #01579b;
+    transition: all .3s ease-in-out;
+}
+.header-info .caption-button:hover{
+    color: #01579b;
+    background-color: #fff;
+}
 /*                            header                                */
 /*                            brand cat section                           */
 .brand-section{
@@ -447,7 +493,7 @@ html[dir=rt] .add-to{
 }
 .product .product-word{
     font-family: "TajawalMedium";
-    font-size: 17px;
+    font-size: 14px;
     line-height: 12px;
     text-align: center;
     text-decoration: none;
@@ -465,13 +511,13 @@ html[dir=rt] .add-to{
 .product-content .price-box{
     text-align: center;
     font-family: "TajawalBold";
-    font-size: 19px;
+    font-size: 16px;
     color: #FFF;
     background-color: #01579b;
-    border-radius: 12px;
+    border-radius: 10px;
     width: 100%;
-    height: 49px;
-    line-height: 49px;
+    height: 36px;
+    line-height: 36px;
     margin: 0 auto;
     transition: all 0.3s ease-in-out;
 }
@@ -488,7 +534,7 @@ html[dir=rt] .add-to{
     display: block;
     color: #000;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     font-family: "TajawalMedium";
     line-height: 44px;
     transition: all 0.4s ease-in-out;
@@ -502,7 +548,7 @@ html[dir=rt] .add-to{
     color: #fff;
 } */
 .product .rate-star span{
-    font-size: 14px;
+    font-size: 12px;
     color: #bdbdbd;
 }
 .product .rate-star .checked{
@@ -1457,14 +1503,36 @@ html[dir=rtl] .social-link:last-of-type{
         font-size: 17px;
         width: 17px;
     }
+    /*open search*/
+    /*          header info        */
+    .header-info{
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 25px;
+        padding-top: 110px;
+    }
+    .header-info .header-cont{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-info .header-captions{
+        margin-bottom: 25px;
+    }
+    .header-info .figure-captions{
+        width: 300px;
+    }
+    .header-info .caption-head{
+        font-size: 55px;
+    }
+    /*           header info          */
+    /*                  menu in mobile size                                  */
     /*                              brand section                           */
     .brand-grid{
         grid-template-columns: repeat(4, auto); /*auto to respond to justify 1fr dont respond*/
         justify-content: center;
     }
     /*                              brand section                           */
-    /*open search*/
-    /*                  menu in mobile size                                  */
+    
     /*                             banner section                          */
     .big-image-section{
         margin-bottom: 15px;
