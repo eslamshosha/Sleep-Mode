@@ -1486,6 +1486,11 @@ html[dir=rtl] .social-link:last-of-type{
     .search-icon{
         display: inline-flex;
         justify-content: flex-end;
+        position: relative;
+        /* z-index: 99; */
+    }
+    .search-icon-ovar{
+        z-index: 99;
     }
     .open-search::after {
         content: "";
@@ -1514,7 +1519,8 @@ html[dir=rtl] .social-link:last-of-type{
         height: auto;
         min-height: 100vh;
         padding-bottom: 25px;
-        padding-top: 80px;
+        padding-top: 110px;
+        align-items: center;
     }
     .header-info .header-cont{
         flex-direction: column;
@@ -1527,7 +1533,7 @@ html[dir=rtl] .social-link:last-of-type{
         width: 300px;
     }
     .header-info .caption-head{
-        font-size: 55px;
+        font-size: 45px;
     }
     /*           header info          */
     /*                  menu in mobile size                                  */
@@ -1645,6 +1651,11 @@ html[dir=rtl] .social-link:last-of-type{
         gap: 15px 15px;
     }
 }
+@media (max-width: 320px){
+    .header-info .figure-captions{
+        width: 250px;
+    }
+}
 /*                                    media query                                    */
 
 /*overlay*/
@@ -1661,6 +1672,6 @@ html[dir=rtl] .social-link:last-of-type{
     opacity: .4;
     display: none;
 }
-.overlay-box2{
+/* .overlay-box2{
     opacity: 0;
-}
+} */

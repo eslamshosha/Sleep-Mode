@@ -25,19 +25,21 @@ $(document).ready(function() {
 		})
    	}
        //This is to Open Search Box 
-	$(".search-icon").click(function() {
+	$(".search .search-icon").click(function() {
 		// $("body").addClass("overflow")
-		$(".search .search-icon").removeClass("open-search")
-		$(".search .search-icon").addClass("close-search")
-		$(".search-cont").addClass("search-open");
-		$(".overlay-box2").fadeIn(500);
+		$(this).toggleClass("open-search close-search")
+		
+		$(".search-cont").toggleClass("search-open");
+		$(".overlay-box").fadeToggle(500);
+        $(".search-icon.hidden-lg").toggleClass("search-icon-ovar");
 	});
-    $(".overlay-box2").click(function() {
+    $(".overlay-box").click(function() {
 		// $("body").removeClass("overflow")
 		$(".search .search-icon").addClass("open-search")
 		$(".search .search-icon").removeClass("close-search")
 		$(".search-cont").removeClass("search-open");
-		$(".overlay-box2").fadeOut(500);
+        $(".search-icon.hidden-lg").removeClass("search-icon-ovar");
+		$(".overlay-box").fadeOut(500);
 	});
 	
     ////////////////add chevron-down class in mobile size////////////////////////////////
