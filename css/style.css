@@ -403,13 +403,13 @@ html[dir=rt] .add-to{
     gap: 30px 30px;
 } 
 .brand .brand-img {
+    border-radius: 15px;
     overflow: hidden;
     transition: all 0.3s ease-in-out;      
 }
 
   
 .brand .brand-img img { 
-    border-radius: 15px;
     max-height: 100%;
     overflow: hidden;
     -webkit-transition: all .3s ease-in-out;
