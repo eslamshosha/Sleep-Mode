@@ -350,7 +350,7 @@ html[dir=rt] .add-to{
     justify-content: space-between;
     align-items: center;
 }
-@media (min-width:1200px) and (max-width:1500px){      
+@media (min-width:1200px) and (max-width:1920px){      
     .header-info .figure-captions{
         width: 410px;
     }
@@ -397,14 +397,14 @@ html[dir=rt] .add-to{
 }
 
   
-.brand-slider .brand-img img { 
+.brand .brand-img img { 
     border-radius: 15px;
     max-height: 100%;
     overflow: hidden;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-.brand-slider .brand-img img:hover{
+.brand .brand-img img:hover{
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
@@ -523,11 +523,11 @@ html[dir=rt] .add-to{
 }
 .product-content .price-box .first-price{
     font-family: "TajawalBold";
-    font-size: 19px;
+    font-size: 16px;
 }
 .product-content .price-box .last-price{
     font-family: "TajawalRegular";
-    font-size: 19px;
+    font-size: 16px;
     text-decoration: line-through;
 }
 .product .product-name{
@@ -929,7 +929,7 @@ html[dir=rtl] .features-box .features-text{
     margin-right: 15px;
 }
 .features-box .features-h{
-    font-size: 20px;
+    font-size: 18px;
     font-family: "TajawalBold";
     color: #000;
     margin: 0;
@@ -1157,7 +1157,7 @@ html[dir=rtl] .social-link:last-of-type{
 }
 .nav-foot-link{
     color: #757575;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "TajawalMedium";
     transition: all 0.3s ease-in-out;
 }
@@ -1264,9 +1264,9 @@ html[dir=rtl] .social-link:last-of-type{
     html[dir=rtl] .nav-header figure {
         transform: translateX(0);
     }
-    .add-to .dropdown-content{
+    /* .add-to .dropdown-content{
         left: 10%;
-    }
+    } */
     .show-icons{
         display: block;
     }
@@ -1308,7 +1308,7 @@ html[dir=rtl] .social-link:last-of-type{
         bottom: 0;
         width: 80%;
         height: 100%;
-        background-color: rgb(255, 255, 255, .969);
+        background-color: rgb(255, 255, 255);
         transition: .4s;
         z-index: 200;
         /* opacity: 0;
@@ -1337,13 +1337,13 @@ html[dir=rtl] .social-link:last-of-type{
     .nav-head {
         display: flex;
         flex-direction: column;
-        height: 95px;
+        height: 65px;
         color: #fff;
         background-color: transparent;
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        padding: 40px 25px 0;
+        padding: 20px 20px 0;
     }
     .nav-head .first-head{
         display: flex;
@@ -1411,6 +1411,9 @@ html[dir=rtl] .social-link:last-of-type{
     .dropdown-content::before{
         display: none;
     }
+    .user-to .dropdown-content::before{
+        display: block;
+    }
     html[dir=rtl] .big-menu .dropdown-content{
         text-align: right;
     }
@@ -1453,9 +1456,12 @@ html[dir=rtl] .social-link:last-of-type{
         color: #01579b;
         text-align: start;
     }
-    .user-to{
-        display: none;
+    .user-to .dropdown-content a{
+        text-align: center;
     }
+    /* .user-to{
+        display: none;
+    } */
     /*open search*/
     .search-input{
         width: 100%;
@@ -1559,10 +1565,13 @@ html[dir=rtl] .social-link:last-of-type{
     
     /*                             big-image section                          */
     /*                             product section                          */
+    .product-section .product-head{
+        text-align: center;
+    }
     .product-content .price-box{
         /* width: 120px; */
         display: flex;
-        height: 85px;
+        height: 60px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -1642,7 +1651,7 @@ html[dir=rtl] .social-link:last-of-type{
 }
 @media (max-width: 480px){
     .product .product-name{
-        height: 50px;
+        height: 40px;
     }
 }
 @media (max-width: 767px){

@@ -45,7 +45,7 @@ $(document).ready(function() {
     ////////////////add chevron-down class in mobile size////////////////////////////////
 
 	 if ( $(window).width() < 1199 ) {
-        $("header .add-chevron").addClass("chevron-down");
+        $(".top-header .add-chevron").addClass("chevron-down");
         
     }
 	
