@@ -1729,11 +1729,6 @@ html[dir=rtl] .social-link:last-of-type{
         visibility: visible;
     }
 }
-.mega-menu:hover .cats-dispaly{
-    display: block;
-    opacity: 1;
-    visibility: visible;
-}
 .cats-dispaly {
     position: absolute;
     left: 0;
@@ -1798,7 +1793,9 @@ html[dir=rtl] .social-link:last-of-type{
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    border-radius: 5px;
     padding: 18px 0 0;
+    margin-inline-start: 5px;
 }
 .has-level-2:hover > .sub-list {
     opacity: 1;
@@ -1814,7 +1811,9 @@ html[dir=rtl] .social-link:last-of-type{
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    border-radius: 5px;
     padding: 18px 0;
+    margin-inline-start: 5px;
 }
 .has-level-3>.cat-anchor>i {
     margin-left: auto;
@@ -1840,6 +1839,11 @@ html[dir=rtl] .social-link:last-of-type{
         visibility: visible;
         transition: none;
         box-shadow: none;
+    }
+    .sub-list-3,
+    .sub-list
+    {
+        margin-inline-start: 0;
     }
 
 }

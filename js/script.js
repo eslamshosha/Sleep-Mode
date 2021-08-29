@@ -23,12 +23,16 @@ $(document).ready(function() {
 		item.slideToggle(500);
 		
 		})
-        // $('.cat-li .btn-div').click(function (e) {
-        //     e.preventDefault()
-        //     var item =  $(this).siblings(".cat-display");
-        //     item.slideToggle(500);
-            
-        // })
+        //slide down menu
+        $('.btn-div').click(function () {
+            $(".cats-dispaly").slideToggle(400);
+            if ($(window).width() <= 1199) {
+                $(this).toggleClass("active")
+            }
+        });
+        $('.overlay-box').click(function () {
+            $(".cats-dispaly").slideToggle(400);
+        });
 
         $('.has-level-2>.cat-anchor').click(function (e) {
             e.preventDefault()
