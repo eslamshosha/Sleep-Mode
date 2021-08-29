@@ -23,7 +23,47 @@ $(document).ready(function() {
 		item.slideToggle(500);
 		
 		})
+        // $('.cat-li .btn-div').click(function (e) {
+        //     e.preventDefault()
+        //     var item =  $(this).siblings(".cat-display");
+        //     item.slideToggle(500);
+            
+        // })
+
+        $('.has-level-2>.cat-anchor').click(function (e) {
+            e.preventDefault()
+            var item = $(this);
+            $(".has-level-2>.cat-anchor").not(item).removeClass("active");
+            $(item).toggleClass("active");
+            if ($(item).siblings().css('display') == 'none') {
+                $(item).siblings().slideDown(500);
+            } else {
+                $(item).siblings().slideUp(500);
+            }
+            $(".has-level-2>.cat-anchor").not(item).siblings().slideUp(500);
+        })
+
+        $('.has-level-3>.cat-anchor').click(function (e) {
+            e.preventDefault()
+            var item = $(this);
+            $(".has-level-3>.cat-anchor").not(item).removeClass("active");
+            $(item).toggleClass("active");
+            if ($(item).siblings().css('display') == 'none') {
+                $(item).siblings().slideDown(500);
+            } else {
+                $(item).siblings().slideUp(500);
+            }
+            $(".has-level-3>.cat-anchor").not(item).siblings().slideUp(500);
+        })
    	}
+    //    $('.btn-div').click(function () {
+    //     $(".cats-dispaly").slideToggle(400);
+    //     $(".overlay-box2").fadeToggle(300);
+    //     if ($(window).width() <= 1199) {
+    //         $(".overlay-box2").hide();
+    //         $(this).toggleClass("active")
+    //     }
+    //     });
        //This is to Open Search Box 
 	$(".search .search-icon").click(function() {
 		// $("body").addClass("overflow")
