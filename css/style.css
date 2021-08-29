@@ -1728,9 +1728,6 @@ html[dir=rtl] .social-link:last-of-type{
         opacity: 1;
         visibility: visible;
     }
-    .cats-dispaly{
-        direction: ltr;
-    }
 }
 .cats-dispaly {
     position: absolute;
@@ -1750,7 +1747,16 @@ html[dir=rtl] .social-link:last-of-type{
     border-radius: 5px;
     transition: all .3s ease-in-out;
 }
-
+.cats-dispaly{
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+}
+html[dir=rtl] .cats-dispaly{
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+}
 .cats-div {
     /* display: flex;
     align-items: center;
@@ -1785,8 +1791,13 @@ html[dir=rtl] .cats-dispaly  li{
     color: #01579b;
 }
 .has-level-2>.cat-anchor>i {
-    margin-inline-start: auto;
+    /* margin-inline-start: auto; */
     font-size: 10px;
+}
+html[dir=rtl] .sub-list,
+html[dir=rtl] .sub-list-3{
+    left: auto;
+    right: 100%;
 }
 
 .sub-list {
@@ -1823,6 +1834,10 @@ html[dir=rtl] .cats-dispaly  li{
     /* margin-left: auto; */
     font-size: 10px;
 }
+html[dir=rtl] .has-level-3>.cat-anchor>i,
+html[dir=rtl] .has-level-2>.cat-anchor>i{
+    transform: scaleX(-1);
+}
 @media (min-width: 992px){
     .has-level-2>.cat-anchor>i::before {
         content: "";
@@ -1844,10 +1859,15 @@ html[dir=rtl] .cats-dispaly  li{
         transition: none;
         box-shadow: none;
     }
-    .sub-list-3,
-    .sub-list
-    {
-        margin-inline-start: 0;
+    .cats-dispaly{
+        left: 0;
+        right: 0;
+        transform: translateX(0);
+    }
+    html[dir=rtl] .cats-dispaly{
+        left: 0;
+        right: 0;
+        transform: translateX(0);
     }
 
 }
