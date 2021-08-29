@@ -1847,6 +1847,16 @@ html[dir=rtl] .has-level-2>.cat-anchor>i{
     }
 }
 @media (max-width: 1199px){
+    .cats-dispaly .cat-li a{
+        line-height: 46px;
+    }
+    .sub-list .cat-li a{
+        line-height: 34px;
+    }
+    .sub-list,
+    .sub-list-3{
+        padding: 8px 0 8px;
+    }
     .cats-dispaly,
     .sub-list-3,
     .sub-list,
