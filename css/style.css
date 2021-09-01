@@ -1139,6 +1139,12 @@ html[dir=rtl] .newsletter .fa-envelope{
         text-align: center;
     }
    /*        strips-section             */
+   /*        product slider            */
+   .product-content .price-box{
+       display: flex;
+       flex-direction: column;
+   }
+   /*        product slider            */
    /*        banner-section           */
    .big-image-section {
         margin-bottom: 15px;
