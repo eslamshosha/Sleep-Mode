@@ -928,6 +928,7 @@ html[dir=rtl] .newsletter .fa-envelope{
 .nav-foot .nav-anchor{
     color: #000;
     font-size: 16px;
+    text-decoration: none;
     font-family: "TajawalMedium";
     text-transform: capitalize;
     transition: all 0.3s ease-in-out;
